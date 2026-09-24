@@ -1,0 +1,43 @@
+[build-system]
+requires = [
+    "setuptools>=64",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["m2r_mea"]
+
+[project]
+name = "m2r_mea"
+version = "1.1.0"
+description = "Example of Python package for the M2R MeA"
+readme = "README.md"
+authors = [
+    {name = "Roland Denis", email = "denis@math.univ-lyon1.fr"},
+]
+maintainers = [
+    {name = "Roland Denis", email = "denis@math.univ-lyon1.fr"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+keywords = [
+    "Maths en Actions",
+    "Python",
+]
+requires-python = ">=3.12"
+dependencies = [
+   "tqdm", # Progress bar
+   "numpy>=2", # Numpy with proper type handling
+]
+
+
+[project.urls]
+homepage = "https://github.com/rolanddenis/m2r_mea"
+repository = "https://github.com/rolanddenis/m2r_mea"
+"Bug Tracker" = "https://github.com/rolanddenis/m2r_mea/issues"
